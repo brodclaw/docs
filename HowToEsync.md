@@ -26,6 +26,15 @@ Change `username` to your actual username. Once the file is edited, reboot for t
 
 >      username hard nofile 524288
 
+**Void Linux** <br>
+After completing previous step, on Void linux you'll likely have to add
+
+>      session required /lib/security/pam_limits.so
+
+to `/etc/pam.d/login` and `/etc/pam.d/lightdm`
+
+Reboot and you should be good.
+
 **Using Esync Wine builds**
 
 Esync is enabled by default starting with Lutris 0.5.9 and all presently available Lutris Wine versions include Esync.
